@@ -1,15 +1,5 @@
-//Belajar DOM
-//Apa itu dom?
-//DOM adalah singkatan dari Document Object Model, yaitu sebuah interface yang digunakan untuk mengakses dan memanipulasi elemen-elemen dalam sebuah dokumen HTML atau XML. DOM memungkinkan kita untuk mengubah struktur, gaya, dan konten dari sebuah halaman web secara dinamis menggunakan bahasa pemrograman seperti JavaScript. Dengan DOM, kita dapat menambahkan, menghapus, atau memodifikasi elemen-elemen dalam halaman web tanpa harus memuat ulang halaman tersebut. DOM juga menyediakan berbagai metode dan properti yang memungkinkan kita untuk berinteraksi dengan elemen-elemen dalam dokumen dengan mudah.
-//contoh penggunaan DOM untuk mengubah teks dalam sebuah elemen HTML
-//HTML
-// <p id="demo">Hello World!</p>
-//JavaScript
-document.getElementById("demo").innerHTML = "Hello JavaScript!"; //mengubah teks dalam elemen dengan id "demo" menjadi "Hello JavaScript!"
-//contoh penggunaan DOM untuk mengubah gaya dari sebuah elemen HTML
-//HTML
-// <p id="demo">Hello World!</p>
-//JavaScript
-document.getElementById("demo").style.color="red";
-document.getElementById("demi").style.fontStyle="italic";
-docment
+//OOP
+//object Oriented Programming (OOP) adalah paradigma pemrograman yang menggunakan objek dan kelas untuk memodelkan data dan perilaku dalam program. OOP memungkinkan pengembang untuk membuat kode yang lebih modular, dapat digunakan kembali, dan mudah dipelihara. Konsep utama dalam OOP meliputi enkapsulasi, pewarisan, dan polimorfisme.
+//Enkapsulasi adalah konsep OOP yang menyembunyikan detail implementasi dari objek dan hanya menampilkan antarmuka publik yang dapat digunakan oleh pengguna objek. Dengan enkapsulasi, pengguna objek tidak perlu mengetahui bagaimana objek bekerja di dalamnya, sehingga memudahkan penggunaan dan pemeliharaan kode.
+//Pewarisan adalah konsep OOP yang memungkinkan sebuah kelas untuk mewarisi sifat dan perilaku dari kelas lain. Dengan pewarisan, pengembang dapat membuat kelas baru yang memiliki semua sifat dan perilaku dari kelas induknya, sehingga memudahkan penggunaan kembali kode dan mempercepat pengembangan aplikasi.
+//Polimorfisme adalah konsep OOP yang memungkinkan objek dari kelas yang berbeda untuk digunakan secara bergantian melalui antarmuka yang sama. Dengan polimorfisme
