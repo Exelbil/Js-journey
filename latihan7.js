@@ -75,7 +75,7 @@ console.log(array2.join(` - `))
 var array3 = ["agus", "budi", "caca", "dodi", "erik"]
 //rumus splice = splice(indexdiganti, jumlahElementYangDihapus, elementBaru1, elementBaru2, ...)
 //indexdiganti = index yang ingin diganti, jumlahElementYangDihapus = jumlah element yang ingin dihapus, elementBaru1, elementBaru2, ... = element baru yang ingin ditambahkan
-array3.splice(2, 2, "sustri","exel") //menghapus 2 element pada index ke 3 dan menambahkan element baru "sustri" pada index ke 3
+array3.splice(2, 2, "sustri","exel") //menghapus 2 element pada index ke 3 dan ke - 4 menambahkan element baru "sustri" pada index ke 3 dan element baru "exel" pada index ke 4
 console.log(array3.join(` - `))
 
 //7. mengiris isi array dengan SLICE
