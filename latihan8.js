@@ -39,10 +39,12 @@ console.log(`Mahasiswa bernama ${(Mahasiswa[0])} dengan perolehan Ipk adalah ${I
 
 
 //Menggunakan Object
+
+//Membuat object secara literal
 var mahasiswa = {
     //Properties object
     //Properties adalah variabel didalam object
-    nama :`exel`,
+    nama :`exel`,  //Key : Value , Merupakan struktur dari properti
     umur : 21,
     lulus : true,
     alamat : {
@@ -66,3 +68,84 @@ var mahasiswa = {
 
 console.log(mahasiswa.ipkumulatif());
 console.log(`Perkenalkan nama saya ${mahasiswa.nama}, saya berumur ${mahasiswa.umur} tahun, saya tahun ini lulus dengan Indeks prestasi kumulatif ${mahasiswa.ipkumulatif()}-IPK, saya tinggal di ${mahasiswa.alamat.Jalan}`)
+
+//Membuat object dengan functio declaration
+    function kendaraan(nama,modelkendaraan,jeniskendaraan){
+    var kendaraan = {} //harus membuat objek kosong secara manual
+    kendaraan.nama = nama;
+    kendaraan.modelkendaraan = modelkendaraan;
+    kendaraan.jeniskendaraan = jeniskendaraan;
+    return kendaraan;//mengembalikan nilai objek 
+
+}
+
+    var Honda1 = kendaraan(`Honda-nsx`,`C7133`,`Roda empat`)
+    var Honda2 = kendaraan(`Honda vario new 123`,`S3461`,`Roda dua`)
+    
+    kendaraan();
+    console.log(Honda1)
+    console.log(Honda2)
+
+//Membuat object menggunakan constructor
+    function Makanan(Nama,Jenismakanan,Rasamakanan){
+    //New membuat object kosong : var makanan = {}
+    this.Nama = Nama;
+    this.Jenismakanan = Jenismakanan; //Inisiasi property
+    this.Rasamakanan = Rasamakanan;
+    //New otomatis mengembalikan nilai : return makanan;
+}
+
+    var Menu1 = new Makanan(`Seblak`,`Berkuah`,`Pedas`)//Keywoard New digunakan untuk membuat object kosong otomatis lalu mengarahkan this kedalam object, lalu otomatis akan mengembalikan nilai object, ini mempermudah pembuatan object dengan lebih singkat;
+    console.log(Menu1)
+
+//this
+//dalam penggunaan this perlu memahami contextdari code tersebut
+//global scope adalah?
+//
+//this adalah window sehingga this bisa dikatakan window, yaitu window merupakan object global
+console.log(window === this)
+
+//objek deklarasi
+function hi (){
+    console.log(this)
+    console.log(`hii`)
+}
+//this dan window melakukan action yang sama yaitu menjalankan objek "hi" dengan cakupan global atau ke seluruh code
+window.hi();
+this.hi(); //this mengembalikan objek  global]
+
+//objek literal
+var Sapa = {
+    Salam : hi,
+    hello : function (){
+
+        console.log(`Hii`)
+        console.log(this)//Pada objek literal, this digunakan untuk mengembalikan nilai dalam bentuk objek  terkait dengannya
+    }
+}
+
+
+Sapa.hello();
+
+function komandan(){
+    console.log(this)
+}
+
+new komandan();//This mengembalikan nilai dengan object yang baru dibuat
+
+
+
+//Latihan membuat object
+//Caffe
+
+function Koki(NamaKoki,Gajikoki,Jamkerja){
+    this.NamaKoki = NamaKoki;
+    this.Gajikoki = Gajikoki;
+    this.Jamkerja = Jamkerja;
+}
+
+var koki1 = new Koki(`Ahmad`,`3jt`,`7 Malem - 3 Pagi`)
+var koki2 = new Koki(`Roni`,`6jt`,`9 Pagi - 5 Sore`)
+var koki3 = new Koki(`Remon`,`4jt`,`3 Pagi - 9 pagi`)
+    console.log()
+

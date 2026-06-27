@@ -98,7 +98,7 @@ function percobaan(){
     // name conflit
     var a = 2
     var b = 4
-    console.log(a) // variable luar atau global variable bisa diakses dari dalam function
+    console.log(a) // variable yang diakses adalah variable local
     console.log(window.a) // variable yang dipanggil adalah variable global  bukan variable local
 }
 
@@ -150,7 +150,7 @@ console.log(`Hasil perkalian  adalah ${kali(8,6)}`)
 function Person(name, age) {
     this.name = name;
     this.age = age;
-  }
+}
   console.log(new Person("John", 30)); // Output: Person { name: 'John', age: 30 }
  //Apa itu this?
  //This digunakan untuk merujuk pada objek yang sedang digunakan. Dalam contoh di atas, this merujuk pada objek Person yang sedang dibuat. Dengan menggunakan this, kita dapat mengakses properti dan metode dari objek tersebut.
