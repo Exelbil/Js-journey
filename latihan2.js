@@ -26,6 +26,7 @@ hasil = a % b // modulus / sisa bagi
 console.log(`hasil ${a} % ${b} = ${hasil}`)
 
 //operator Penugasan  =, +=, -=, *=, /=, %=
+//Operator penugasan adalah operator yang digunakan untuk memberikan nilai tertentu pada sebuah variabel berdasarkan tugas diberikan. Operator penugasan terdiri dari beberapa jenis, yaitu: =, +=, -=, *=, /=, %=
 console.log(`\n\nOperator Penugasan`)
 c = 10 
 console.log(`nilai c = ${c}`)

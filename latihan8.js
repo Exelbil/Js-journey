@@ -6,5 +6,63 @@
 
 
 
-//Contoh penggunaan OOP sederhana pada JavaScript
+//Contoh penggunaan  tanpa menggunakan OOP
+var namaMahasiswa = "Exel"
+var umurMahasiswa = 21
+var lulusMahasiswa = true
+var Ipsemester = [3.5, 3.7, 3.9, 4.0] 
 
+var Ipkumulatif = function (Ipsemester) {
+    let total = 0
+    let hasil = 0
+    for(let i = 0; i < Ipsemester.length; i++) {
+        total += Ipsemester[i] //Kenapa pake kurung siku? karena Ipsemester adalah array, jadi untuk mengakses nilai dalam array harus menggunakan kurung siku dan indexnya
+
+    }
+    return hasil = total / Ipsemester.length
+}
+
+console.log(`Ipkumulatif dari ${namaMahasiswa} adalah ${Ipkumulatif(Ipsemester)}`)
+
+//Menggunakan Array
+var Mahasiswa = ["Exel", 21, true, [3.5, 3.7, 3.9, 4.0]] //Array adalah tipe data yang digunakan untuk menyimpan banyak nilai dalam satu variabel
+var ipkumulatif1 = function (Ipsemester) {
+    let total = 0
+    for(let i = 0; i < Ipsemester.length; i++){
+        total += Ipsemester[i]
+    }
+    return  total / Ipsemester.length
+}
+
+let Ipk = ipkumulatif1(Mahasiswa[3])
+console.log(`Mahasiswa bernama ${(Mahasiswa[0])} dengan perolehan Ipk adalah ${Ipk}`)
+
+
+//Menggunakan Object
+var mahasiswa = {
+    //Properties object
+    //Properties adalah variabel didalam object
+    nama :`exel`,
+    umur : 21,
+    lulus : true,
+    alamat : {
+            Jalan : "Jln Soekarno, No 23",
+            Perumahan :"Elit youth",
+            blok : 17,
+            Nmrumah : 34
+    },
+    ipsemester : [3.5, 3.7, 3.9, 4.0],
+    //Method dari object
+    //Method adalah function yang berjalan didalam object
+    ipkumulatif : function(){
+        let total = 0
+        let ips = this.ipsemester
+        for(let i = 0; i < ips.length; i++){
+            total += ips[i]
+        }
+        return total / ips.length
+    }
+}
+
+console.log(mahasiswa.ipkumulatif());
+console.log(`Perkenalkan nama saya ${mahasiswa.nama}, saya berumur ${mahasiswa.umur} tahun, saya tahun ini lulus dengan Indeks prestasi kumulatif ${mahasiswa.ipkumulatif()}-IPK, saya tinggal di ${mahasiswa.alamat.Jalan}`)

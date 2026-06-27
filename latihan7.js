@@ -1,6 +1,6 @@
 // manipulasi array
 // apa itu array ?
-// array adalah tipe data yang digunakan untuk menyimpan banyak nilai dalam satu variabel
+// array bukanlah tipe data, array adalah sebuah object yang digunakan untuk menyimpan banyak nilai sekaligus dalam satu variabel. Array dapat menyimpan berbagai tipe data seperti string, number, boolean, object, dan lain-lain. Array juga dapat menyimpan banyak nilai sekaligus dalam satu variabel. Nilai dalam array dapat diakses menggunakan index, dimana index dimulai dari 0. Nilai dalam array disebut elemen, dan setiap elemen dalam array memiliki index yang unik. Index digunakan untuk mengakses elemen dalam array
 // array dapat menyimpan berbagai tipe data seperti string, number, boolean, object, dan lain-lain
 // array juga dapat menyimpan banyak nilai sekaligus dalam satu variabel
 //Nilai dalam array dapat diakses menggunakan index, dimana index dimulai dari 0
