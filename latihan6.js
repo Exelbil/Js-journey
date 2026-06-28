@@ -142,8 +142,13 @@ console.log("hasil faktorisasi : ", faktorisasi(5))
 const kali = (n,m) => { //Arrow function adalah sintaks singkat untuk membuat function
     return n * m
 }
+
+//Versi singkat
+const pembagian = (j,k) => j / k;
+
 console.log(`Hasil perkalian  adalah ${kali(8,6)}`) 
-//Yang membedakan arrow function dengan function biasa adalah arrow function tidak memiliki this, arguments, super, dan new.target. Sehingga arrow function tidak bisa digunakan sebagai constructor.
+console.log(`Hasil pembagian adalah ${pembagian(10,2)}`)
+//Yang membedakan arrow function dengan function biasa adalah arrow function tidak menggunakan this karna bisa menyebabkan this akan mengakses secara global, bukan dalam skala local, arguments, super, dan new.target. Sehingga arrow function tidak bisa digunakan sebagai constructor.
 
 //penggunaan this pada function
 //contoh penggunaan this pada function
