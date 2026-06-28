@@ -170,5 +170,84 @@ console.log()
 
 
 //Object.create
+//Object.create adalah
+//Merupakan perintah untuk membuat object baru yang mewarisi property serta method dari objek
+
+var methodsiswa = {
+    makan : function(makan){
+        this.Energi += makan
+        console.log(`Ayam goreng menambah energi siswa sebanyak ` + makan )
+        
+},
+
+    tidur : function(tidur){
+        this.Energi += tidur
+        console.log(`Ayam goreng menambah energi siswa sebanyak ` + makan )
+        
+    }
+}
+//Tanpa object.create()
+// function siswa(Namasiswa,Kelas,Umursiswa){
+//     var Profilsiswa = {}
+//     Profilsiswa.Namasiswa = Namasiswa;
+//     Profilsiswa.Kelas = Kelas;
+//     Profilsiswa.Umursiswa = Umursiswa;
+//     Profilsiswa.Makan = methodsiswa.makan;
+//     return Profilsiswa;
+// }
+
+//Dengan object.create()
+// function siswa(Namasiswa,Kelas,Umursiswa,Energi){
+//     var Profilsiswa = Object.create(methodsiswa);
+//     Profilsiswa.Namasiswa = Namasiswa;
+//     Profilsiswa.Kelas = Kelas;
+//     Profilsiswa.Umursiswa = Umursiswa;
+//     Profilsiswa.Energi = Energi;
+//     return Profilsiswa;
+// }
+
+// let siswa1 = siswa(`Exel`, `3B`, `9tahun`,`5`)
+
+//Belajar prototype
+
+// function siswa(Nama, Energi){
+//     //this.Siswa = Object.created(methodsiswa.prototype) // dalam constructor function, mereka menambahkan keyword prototype untuk menghubungkan antar inisiasi property dengan method
+//     this.Nama = Nama;
+//     this.Energi = Energi;
+// }
+
+// siswa.prototype.makan = function (mbg){  //Dengan prototype kita bisa buat satu object yang meiliki prototype dengan berbagai macam method
+//     this.Energi += mbg;
+//     return  `Hii, selamat menikmati mbg ya ${this.Nama}` 
+// }
+
+// siswa.prototype.tidur = function (jam) {
+//     this.Energi += jam
+//     return `Selamat tidur ya ${this.Nama}`
+// }
+
+// let siswa1 =  new  siswa (`Exel`, 20)
 
 
+//Versi class
+
+class Siswasmp {
+    constructor(Nama,Energi){
+        this.Nama = Nama;
+        this.Energi = Energi;
+    }
+
+    makan(mbg){
+    this.Energi += mbg;
+    return  `Hii, selamat menikmati mbg ya ${this.Nama}` 
+    }
+
+    tidur(jam){
+    this.Energi += jam
+    return `Selamat tidur ya ${this.Nama}`
+    }
+}
+
+
+let exel = new Siswasmp (`Exel`, 10)
+let roni = new Siswasmp (`Roni`, 23)
