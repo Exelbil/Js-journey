@@ -142,10 +142,33 @@ function Koki(NamaKoki,Gajikoki,Jamkerja){
     this.NamaKoki = NamaKoki;
     this.Gajikoki = Gajikoki;
     this.Jamkerja = Jamkerja;
+
+    this.makanan = function(Menu,Tampilmenu){
+        this.Menu =  [`Nasi goreng`,`Ayam geprek`,`Bakso`,`Mie ayam`]
+        for(let i = 0; i < Menu.length; i++){
+            console.log(this.Menu())
+        }
+    }
+
+    
 }
 
 var koki1 = new Koki(`Ahmad`,`3jt`,`7 Malem - 3 Pagi`)
 var koki2 = new Koki(`Roni`,`6jt`,`9 Pagi - 5 Sore`)
 var koki3 = new Koki(`Remon`,`4jt`,`3 Pagi - 9 pagi`)
     console.log()
+    console.log(`Customer 1 dibuatin makanan oleh koki ${this.koki1} `)
+
+function barista(Namabarista,Gajibarista,Jamkerjabasrista){
+    this.Namabarista = Namabarista;
+    this.Gajbarista = Gajibarista;
+    this.Jamkerjabasrista = Jamkerjabasrista;
+}
+var barista1 = new barista(`Mamad`,`2jt`,`7 malem - 3 Pagi`)
+var barista2 = new barista(`Roni`,`1.5jt`,`9 Pagi - 5 Sore`)
+console.log()
+
+
+//Object.create
+
 
