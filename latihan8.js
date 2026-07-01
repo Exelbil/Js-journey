@@ -251,3 +251,5 @@ class Siswasmp {
 
 let exel = new Siswasmp (`Exel`, 10)
 let roni = new Siswasmp (`Roni`, 23)
+
+
